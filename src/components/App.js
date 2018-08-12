@@ -1,11 +1,12 @@
 import React from 'react';
+import { hot } from 'react-hot-loader'
 import './App.css'
 
 const propTypes = {};
 
 const defaultProps = {};
 
-export default class App extends React.Component {
+class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {};
@@ -22,3 +23,5 @@ export default class App extends React.Component {
 
 App.propTypes = propTypes;
 App.defaultProps = defaultProps;
+
+export default hot(module)(App)
